@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Example</title>
+	<link rel="stylesheet" type="text/css" href="grid.css">
+	<style>
+		/* Temp style */
+		[class^="column-"]{
+			border:1px solid yellowgreen;
+			padding:10px;
+		}
+		h1{text-align: center; font-size: 1.3rem; color:yellowgreen}
+	</style>
+</head>
+<body>
+	<h1>Example .column-4</h1>
+	<div class="column-4">		
+		<div>Item 1</div>
+		<div>Item 2</div>
+		<div>Item 3</div>
+		<div>Item 4</div>
+	</div>
+	<h1 class="mt-1">Example .column-2 .gap-1</h1>
+	<div class="column-2 gap-1">		
+		<div>Item 1</div>
+		<div>Item 2</div>
+		<div>Item 3</div>
+		<div>Item 4</div>
+	</div>
+	<h1 class="mt-1">Example .column-4 .gap-1 with span</h1>
+	<div class="column-4 gap-1">		
+		<div>Item 1</div>
+		<div class="span-2">Item 2</div>
+		<div>Item 3</div>
+		<div class="span-2">Item 4 .span-2</div>
+		<div class="span-2">Item 5 .span-2</div>
+	</div>
+	<h1 class="mt-1">Example .cotainer .column-3 .gap-1 with span Column inside Column</h1>
+	<div class="container column-3 gap-1 border">
+		<!-- Span example  -->
+		<div class="span-2">
+			Hi
+		</div>
+		<div>
+			Hello
+		</div>
+		<div class="column-3">
+			<div test="3px">
+				3 column
+			</div>
+			<div>
+				3 column
+			</div>
+			<div>
+				3 column
+			</div>
+		</div>
+		<!-- Mixing with Column and span example  -->
+		<div class="span-2 column-3">
+			<div>
+				3 column
+			</div>
+			<div>
+				3 column
+			</div>
+			<div>
+				3 column
+			</div>
+		</div>
+	</div>
+	
+	<div class="column-3 mt-1 border">
+		<div>
+			9 column
+		</div>
+	</div>
+	
+</body>
+</html>
