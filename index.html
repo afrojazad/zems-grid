@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="grid.css">
 	<style>
 		/* Temp style */
-		[class^="column-"]{
+		[class^="column-"], div{
 			border:1px solid yellowgreen;
 			padding:10px;
 		}
@@ -16,29 +16,31 @@
 </head>
 <body>
 	<h1>Example .column-4</h1>
-	<div class="column-4">		
+	<div class="xxlarge-6 xlarge-5 large-4 medium-3 small-2 all-4">		
+		<div>Item 1</div>
+		<div>Item 2</div>
+		<div>Item 3</div>
+		<div>Item 4</div>
+		<div>Item 5</div>
+		<div>Item 6</div>
+	</div>
+	<h1 class="mt-1">Example .medium-4 .gap-1</h1>
+	<div class="medium-4 gap-1">		
 		<div>Item 1</div>
 		<div>Item 2</div>
 		<div>Item 3</div>
 		<div>Item 4</div>
 	</div>
-	<h1 class="mt-1">Example .column-2 .gap-1</h1>
-	<div class="column-2 gap-1">		
+	<h1 class="mt-1">Example .large-4 .gap-1 with span</h1>
+	<div class="large-4 all-6 gap-1">		
 		<div>Item 1</div>
-		<div>Item 2</div>
+		<div class="medium-span-2">Item 2</div>
 		<div>Item 3</div>
-		<div>Item 4</div>
+		<div class="medium-span-2">Item 4 .spa n-2</div>
+		<div class="medium-span-2 span-6">Item 5 .span-2</div>
 	</div>
-	<h1 class="mt-1">Example .column-4 .gap-1 with span</h1>
-	<div class="column-4 gap-1">		
-		<div>Item 1</div>
-		<div class="span-2">Item 2</div>
-		<div>Item 3</div>
-		<div class="span-2">Item 4 .span-2</div>
-		<div class="span-2">Item 5 .span-2</div>
-	</div>
-	<h1 class="mt-1">Example .cotainer .column-3 .gap-1 with span Column inside Column</h1>
-	<div class="container column-3 gap-1 border">
+	<h1 class="mt-1">Example .cotainer .xlarge-3 .gap-1 with span Column inside Column</h1>
+	<div class="container xlarge-3 gap-1 border">
 		<!-- Span example  -->
 		<div class="span-2">
 			Hi
@@ -58,7 +60,7 @@
 			</div>
 		</div>
 		<!-- Mixing with Column and span example  -->
-		<div class="span-2 column-3">
+		<div class="span-2 xxlarge-3">
 			<div>
 				3 column
 			</div>
