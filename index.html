@@ -9,73 +9,62 @@
 		/* Temp style */
 		[class^="column-"], div{
 			border:1px solid yellowgreen;
-			padding:10px;
+			padding:2px;
 		}
 		h1{text-align: center; font-size: 1.3rem; color:yellowgreen}
 	</style>
 </head>
 <body>
 	<h1>Example .column-4</h1>
-	<div class="xxlarge-6 xlarge-5 large-4 medium-3 small-2 all-4">		
+	<div class="xxlarge-6 xlarge-5 large-4 medium-4 small-3 all-2">		
 		<div>Item 1</div>
 		<div>Item 2</div>
 		<div>Item 3</div>
 		<div>Item 4</div>
-		<div>Item 5</div>
-		<div>Item 6</div>
+		<div class="medium-span-2">Item 5 .medium-span-2</div>
+		<div class="medium-span-2">Item 6 .medium-span-2</div>
 	</div>
 	<h1 class="mt-1">Example .medium-4 .gap-1</h1>
-	<div class="medium-4 gap-1">		
-		<div>Item 1</div>
+	<div class="medium-5 all-3 gap-1">		
+		<div class="span-3">Item 1 .span-3</div>
 		<div>Item 2</div>
 		<div>Item 3</div>
-		<div>Item 4</div>
+		<div class="medium-span-2">Item 4 .medium-span-2</div>
+		<div class="span-3">Item 5 .span-3</div>
 	</div>
 	<h1 class="mt-1">Example .large-4 .gap-1 with span</h1>
-	<div class="large-4 all-6 gap-1">		
+	<div class="large-4 all-4 gap-1">		
 		<div>Item 1</div>
 		<div class="medium-span-2">Item 2</div>
 		<div>Item 3</div>
-		<div class="medium-span-2">Item 4 .spa n-2</div>
-		<div class="medium-span-2 span-6">Item 5 .span-2</div>
+		<div class="medium-span-2">Item 4 .medium-span-2</div>
+		<div class="medium-span-2 span-4">Item 5 .medium-span-2 .span-4</div>
 	</div>
-	<h1 class="mt-1">Example .cotainer .xlarge-3 .gap-1 with span Column inside Column</h1>
-	<div class="container xlarge-3 gap-1 border">
-		<!-- Span example  -->
-		<div class="span-2">
-			Hi
+	<h1 class="mt-1">Example .larger-3 .gap-1 with span Column inside Column</h1>
+	<div class="larger-3 ga-1">
+		
+		<div class="medium-4 all-2">
+			<div>Item 1</div>
+			<div>Item 2</div>
+			<div>Item 3</div>
+			<div>Item 4</div>
 		</div>
 		<div>
 			Hello
 		</div>
-		<div class="column-3">
-			<div test="3px">
-				3 column
-			</div>
-			<div>
-				3 column
-			</div>
-			<div>
-				3 column
+		<div>
+			<div class="medium-3">
+				<div>Item 1</div>
+				<div>Item 2</div>
+				<div>Item 3</div>
 			</div>
 		</div>
-		<!-- Mixing with Column and span example  -->
-		<div class="span-2 xxlarge-3">
-			<div>
-				3 column
-			</div>
-			<div>
-				3 column
-			</div>
-			<div>
-				3 column
-			</div>
-		</div>
+				
 	</div>
 	
-	<div class="column-3 mt-1 border">
+	<div class="medium-3 mt-1 border">
 		<div>
-			9 column
+			3 column
 		</div>
 	</div>
 	
